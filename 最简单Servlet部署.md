@@ -1,9 +1,9 @@
-# Servlet API #
+# Servlet API
 
     Servlet是服务器端小程序,使用Servlet API以及相关的类编写出来的Java程序,运行在Web容器中,主要用来扩展Web'服务器的功能
     要编译Servlet需要将Servlet API添加到类路径中,在Tomcat中,Servlet API包含在其安装目录的/lib/servlet-api.jar文件中
 
-## 最简单Servlet ##
+## 最简单Servlet
 
 ```Java
 package com.demo;
@@ -34,7 +34,7 @@ public class HelloServlet extends HttpServlet {
 }
 ```
 
-## Servlet部署 ##
+## Servlet部署
 
     Servlet作为Web应用程序的组件需要部署到容器中才能运行,在Servlet3.0之前需要在部署描述文件web.xml中部署
     3.0之后可以使用注解部署Servlet
