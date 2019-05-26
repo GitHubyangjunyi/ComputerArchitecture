@@ -23,7 +23,7 @@ public class HelloServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request,
                             HttpServletResponse response)throws ServletException, IOException{
             response.setContentType("text/html;charset=UTF-8");
-            PrintWriter out = response.getWriter();
+            PrintWriter out = response.getWriter();//Servlet使用响应对象获得输出流对象,调用有关方法将响应发送给浏览器
             out.println("<html>");
             out.println("<body><title>Hello Servlet</title>");
             out.println("<h3 style='color:#00f'>Hello,World!</h3>");

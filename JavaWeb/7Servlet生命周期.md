@@ -5,7 +5,7 @@
             对一个Servlet可能在容器启动时或第一次被访问时加载到容器中,容器使用Class.forName()加载并初始化,要求Servlet类带有一个不带参数的public构造方法
             通常不在Servlet类中定义任何构造方法,而让编译器添加默认构造方法
         1. 初始化Servlet
-            容器创建Servlet实例后将调用init(ServletConfig)初始化Servlet,ServletConfig对象包含在Web应用程序的初始化参数
+            容器创建Servlet实例后将调用init(ServletConfig)初始化Servlet,使用ServletConfig对象(Servlet配置对象)可以获得Servlet初始化参数/Servlet名称/ServletContext对象等
             然后调用无参数init()完成初始化,init()仅调用一次
             有时候不在容器启动时对Servlet初始化(预加载),而是当容器第一次收到对该Servlet的请求时初始化,成为延迟加载
             可以使用@WebServlet注解的loadOnStartup元素或web.xml的<load-on-startup>元素指定当容器加载并初始化Servlet

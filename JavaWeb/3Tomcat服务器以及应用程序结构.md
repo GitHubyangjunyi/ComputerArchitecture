@@ -12,7 +12,7 @@
     /webpages   所有Web应用程序的根目录
         |----examples
         |----ROOT   默认的Web应用程序http://localhost:8080/
-        |----hello  新建立的Web应用程序
+        |----xweb  新建立的Web应用程序
     /work       存放JSP页面生成的Servlet源文件和字节码文件
 
 ### 配置Tomcat的服务器端口
